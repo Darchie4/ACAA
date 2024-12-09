@@ -104,42 +104,6 @@ Due to the project's structure of components, requirements for each of the diffe
 
 A selection of the functional and non-functional requirements for the \textbf{MES} subsystem can be observed in Table \ref{tab:mes_functional} and \ref{tab:mes_nonfunctional}.
 
-\begin{table}[hbt]
-    \centering
-    \caption{Functional Requirements for MES}
-    \label{tab:mes_functional}
-    \begin{tabular}{|c|p{6cm}|}
-        \hline
-        \textbf{ID} & \textbf{Functional Requirements} \\
-        \hline
-        F1 & Interface for receiving tasks for the production. \\
-        \hline
-        F2 & Report back to the user if alerts in requested tasks. \\
-        \hline
-        F3 & Retrieve data regarding production speed, machine status, and downtime. \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\begin{table}[hbt]
-    \centering
-    \caption{Non-Functional Requirements for MES}
-    \label{tab:mes_nonfunctional}
-    \begin{tabular}{|c|p{6cm}|}
-        \hline
-        \textbf{ID} & \textbf{Non-Functional Requirements} \\
-        \hline
-        NF1 & Task determination to execution, must be delivered to the robot system within 500 ms. \\
-        \hline
-        NF2 & Must scale in sync with the production line. \\
-        \hline
-        NF3 & Must have an up-time of 99.999\% and be available 24/7. \\
-        \hline
-        NF4 & Must support continuous deployment, ensuring the system does not go down during software updates. \\
-        \hline
-    \end{tabular}
-\end{table}
-
 \section{Quality attributes} \label{sec:quality-attribute-scenario}
 % The use case is the foundation to describe and specify architectural requirements.
 % Quality Attributes hvad er det hvorfor har vi det hvordan bruger vi dem. 
@@ -167,14 +131,6 @@ The quality attributes that will be the focus of this project are defined based 
 % lav quality attributes scenario hvad er det hvorfor har vi det hvordan bruger vi dem. det skal baseres på experimentet, så det kunne være safety 
 \subsection{Quality Attribute Scenarios}
 To better understand quality attributes, we describe them using Quality Attribute Scenarios (QAS). They describe the requirements in a systematic and verifiable manner that helps provide understanding for all stakeholders in the project.
-
-\begin{figure}[hbt]
-    \centering
-    \caption{\centering Quality Attribute Scenarios (QAS), consists of six elements that define the scenario}
-    \label{fig:qas-diagram}
-    \includegraphics[width=0.93\linewidth]{images/qas.png} 
-\end{figure}
-
 
 The process of defining QAS' is by defining the six elements, see Figure \ref{fig:qas-diagram}.
 
@@ -211,13 +167,6 @@ Tactics allow patterns to be adapted to a specific area, and by using a systemat
 Patterns focus on specific ways of implementing common software development solutions for common problems and do not directly link to quality attributes. Often, a single pattern may solve multiple tactics.
 
 Figure \ref{fig:availability-tactics} shows different tactics that can be used to improve availability, shown via a tree diagram, branching out according to the different problems that one desires to address.
-
-\begin{figure}[hbt]
-    \centering
-    \caption{Availability Tactics}
-    \label{fig:availability-tactics}
-    \includegraphics[width=0.7\linewidth]{images/Availability tactics.png}
-\end{figure}
 
 To get an overview of the architectural choices made for the different quality attributes, a questionnaire is created where questions are asked and they are recorded in a table. The answers to these questions can then be made the focus of further activities such as examining documentation, analyzing code or other artifacts, reverse engineering code, and so on.
 
@@ -789,21 +738,65 @@ Therefore, doing design early, and on an objective basis, allows for catching er
 The project involved creating a system architecture for an ammunition production line, emphasizing the use of appropriate tools to execute the project systematically and in a structured manner. Based on the research questions posed, a literature review was conducted to examine previous studies in the field. The focus was on addressing the research questions defined in Section \ref{sec:research-question} by analyzing insights from related studies. Throughout the process, the questions were answered using a systematic architectural model and experiments, which demonstrated the system's ability to scale while maintaining low latency and high availability in the simulated environment. However, further work is required to validate the architecture in a real-time environment.
 
 
-
-\newpage
-
-
 \bibliographystyle{IEEEtran}
 \bibliography{references}
-
-% \newpage
-%  .
 
 \newpage
 
 \section{Appendix}
 \label{sec:appendix}
 % Max of 2 pages
+
+\begin{table}[hbt]
+    \centering
+    \caption{Functional Requirements for MES}
+    \label{tab:mes_functional}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{ID} & \textbf{Functional Requirements} \\
+        \hline
+        F1 & Interface for receiving tasks for the production. \\
+        \hline
+        F2 & Report back to the user if alerts in requested tasks. \\
+        \hline
+        F3 & Retrieve data regarding production speed, machine status, and downtime. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[hbt]
+    \centering
+    \caption{Non-Functional Requirements for MES}
+    \label{tab:mes_nonfunctional}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{ID} & \textbf{Non-Functional Requirements} \\
+        \hline
+        NF1 & Task determination to execution, must be delivered to the robot system within 500 ms. \\
+        \hline
+        NF2 & Must scale in sync with the production line. \\
+        \hline
+        NF3 & Must have an up-time of 99.999\% and be available 24/7. \\
+        \hline
+        NF4 & Must support continuous deployment, ensuring the system does not go down during software updates. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[hbt]
+    \centering
+    \caption{\centering Quality Attribute Scenarios (QAS), consists of six elements that define the scenario}
+    \label{fig:qas-diagram}
+    \includegraphics[width=0.93\linewidth]{images/qas.png} 
+\end{figure}
+
+\begin{figure}[hbt]
+    \centering
+    \caption{Availability Tactics}
+    \label{fig:availability-tactics}
+    \includegraphics[width=0.7\linewidth]{images/Availability tactics.png}
+\end{figure}
+
 
 \begin{figure}[hbt]
     \centering
