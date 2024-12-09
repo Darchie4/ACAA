@@ -104,7 +104,7 @@ Due to the project's structure of components, requirements for each of the diffe
 
 A selection of the functional and non-functional requirements for the \textbf{MES} subsystem can be observed in Table \ref{tab:mes_functional} and \ref{tab:mes_nonfunctional}.
 
-\begin{table}[H]
+\begin{table}[hbt]
     \centering
     \caption{Functional Requirements for MES}
     \label{tab:mes_functional}
@@ -121,7 +121,7 @@ A selection of the functional and non-functional requirements for the \textbf{ME
     \end{tabular}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[hbt]
     \centering
     \caption{Non-Functional Requirements for MES}
     \label{tab:mes_nonfunctional}
@@ -168,7 +168,7 @@ The quality attributes that will be the focus of this project are defined based 
 \subsection{Quality Attribute Scenarios}
 To better understand quality attributes, we describe them using Quality Attribute Scenarios (QAS). They describe the requirements in a systematic and verifiable manner that helps provide understanding for all stakeholders in the project.
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{\centering Quality Attribute Scenarios (QAS), consists of six elements that define the scenario}
     \label{fig:qas-diagram}
@@ -200,7 +200,7 @@ In this project, the following quality attribute scenario has been made for perf
 
 \subsection{Architectural Patterns and Tactics}
 Tactics are the design decisions that explain how the quality attributes are used. The goal of a tactic can be the response to a stimulus by improving e.g. availability, see Figure \ref{fig:goal-availablity tactics}.
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{Goal of Availability Tactics}
     \label{fig:goal-availablity tactics}
@@ -212,7 +212,7 @@ Patterns focus on specific ways of implementing common software development solu
 
 Figure \ref{fig:availability-tactics} shows different tactics that can be used to improve availability, shown via a tree diagram, branching out according to the different problems that one desires to address.
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{Availability Tactics}
     \label{fig:availability-tactics}
@@ -250,7 +250,7 @@ This section will therefore cover the design and analysis parts of the project, 
 
 \textbf{Requirement diagrams} is able to bridge the gap between text-based requirements while it helps improve requirement management throughout the system by providing traceability between text-based requirements and the model elements that represent the system analysis, design, implementation, and test cases.
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{\centering Requirement Diagram, giving a overview of the relations}
     \label{fig:requirements-diagram}
@@ -262,7 +262,7 @@ A requirement diagram, as seen in Figure \ref{fig:requirements-diagram}, is a st
 
 The purpose of requirement diagrams is to specify both functional and non-functional requirements in the model so that they can be traced to other model elements that satisfy them, and test cases that verify them. All while providing a hierarchy and traceability between requirements.
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{Requirements Utilize Basic Relations, \cite{WormKangLec72024}}
     \label{fig:requirement-diagram-relations}
@@ -287,7 +287,7 @@ The \textbf{satisfy relationship} in Figure \ref{fig:requirement-diagram-relatio
 A feature model is a systematic way to represent and manage different features in a software product. % or software product line. 
 The model is primarily used to organize and visualize the system's features in a hierarchy, where each feature can be mandatory, optional, alternative, or part of a group of features. The purpose of a feature model is to help software developers understand and structure the common properties of the system and the variations that can be found between different system variants\cite{featuremodels2023}.
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{Feature Model Overview of Production Line}
     \label{fig:feature-model}
@@ -320,7 +320,7 @@ In order to facilitate the different operations the system is designed to, it ha
 By doing this, the system is split into smaller systems, that different teams can work on. It also allows for the isolation of independent systems. 
 By splitting it up, the final system is built as a micro-service architecture, as the individual elements are built and deployed independently of each other.
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{\centering A High-Level Diagram Depicting the Overall Architecture of the System}
     \label{fig:systems_and_subsystems-system_diagram}
@@ -349,14 +349,14 @@ The architecture structure model, is a model that represent the structure of the
 
 In this project, the architecture structure model focuses on the individual systems, what elements are used and how they interact with other systems and pre-made elements. The model has allowed for discussion of the structure of the application, and how different systems interact. The architecture structure model has been split into three diagrams, which together form the full system. The diagrams are for each system in the project; HMI, ERP and MES.
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{A structural diagram showing the structure and communication flow in the \underline{monitoring} part of the MES subsystem}
     \label{fig:systems_and_subsystems-mes_monitoring_systemdiagram}
     \includegraphics[width=1\linewidth]{images/MES_monitoring.png}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{A structural diagram showing the structure and communication flow in the \underline{execution} part of the MES subsystem}
     \label{fig:systems_and_subsystems-mes_execution_systemdiagram}
@@ -416,7 +416,7 @@ The production line requires high availability with an expected uptime of 24/7, 
 % Beskriv hvad det er, og hvordan det bruges i projektet og hvorfor
 This is a guide that help with planning the process of the production line from start to end \cite{eastadl_whitepaper}. This is a process where each stage of the production is meticulously planned and executed.
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{EAST-ADL Abstraction Levels}
     \label{fig:east-adl-levels}
@@ -633,7 +633,7 @@ Explanation:
 
 
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{An explainer for path qualifiers and linear temporal operators in CTL}
     \label{fig:ctl-pq_and_lto_cheatsheet}
@@ -805,35 +805,35 @@ The project involved creating a system architecture for an ammunition production
 \label{sec:appendix}
 % Max of 2 pages
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{A structural diagram showing the structure and communication flow in the ERP subsystem}
     \label{fig:systems_and_subsystems-erp_systemdiagram}
     \includegraphics[width=0.9\linewidth]{images/erp_subsystem.png}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{A structural diagram showing the structure and communication flow in the HMI subsystem}
     \label{fig:systems_and_subsystems-hmi_systemdiagram}
     \includegraphics[width=0.9\linewidth]{images/HMI_subsystem.png}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{The Legend for All Structural Diagrams}
     \label{fig:appendix-systems_and_subsystems_legend}
     \includegraphics[width=0.9\linewidth]{images/systems_subsystems-legend.png}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{Use Case UC01}
     \label{fig:appendix-use-case-01}
     \includegraphics[width=0.9\linewidth]{images/usecase-01.png}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \caption{Structural Diagram - Overview of Different Diagrams}
     \label{fig:structural-diagram}
