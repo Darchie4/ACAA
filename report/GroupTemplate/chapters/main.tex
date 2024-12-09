@@ -172,7 +172,7 @@ To better understand quality attributes, we describe them using Quality Attribut
     \centering
     \caption{\centering Quality Attribute Scenarios (QAS) \\ Six elements that define the scenario}
     \label{fig:qas-diagram}
-    \includegraphics[width=0.93\linewidth]{report/GroupTemplate/images/qas.png} 
+    \includegraphics[width=0.93\linewidth]{images/qas.png} 
 \end{figure}
 
 
@@ -204,7 +204,7 @@ Tactics are the design decisions that explain how the quality attributes are use
     \centering
     \caption{Goal of Availability Tactics}
     \label{fig:goal-availablity tactics}
-    \includegraphics[width=0.5\linewidth]{report/GroupTemplate/images/Goal of availability tactics.png}
+    \includegraphics[width=0.5\linewidth]{images/Goal of availability tactics.png}
 \end{figure}
 
 Tactics allow patterns to be adapted to a specific area, and by using a systematic process, it is possible to reinforce patterns using these tactics.
@@ -216,7 +216,7 @@ Figure \ref{fig:availability-tactics} shows different tactics that can be used t
     \centering
     \caption{Availability Tactics}
     \label{fig:availability-tactics}
-    \includegraphics[width=0.7\linewidth]{report/GroupTemplate/images/Availability tactics.png}
+    \includegraphics[width=0.7\linewidth]{images/Availability tactics.png}
 \end{figure}
 
 To get an overview of the architectural choices made for the different quality attributes, a questionnaire is created where questions are asked and they are recorded in a table. The answers to these questions can then be made the focus of further activities such as examining documentation, analyzing code or other artifacts, reverse engineering code, and so on.
@@ -254,7 +254,7 @@ This section will therefore cover the design and analysis parts of the project, 
     \centering
     \caption{\centering Requirement Diagram, giving a overview of the relations}
     \label{fig:requirements-diagram}
-    \includegraphics[width=0.9\linewidth]{report/GroupTemplate/images/requirements diagram.png}
+    \includegraphics[width=0.9\linewidth]{images/requirements diagram.png}
 \end{figure}
 
 A requirement diagram, as seen in Figure \ref{fig:requirements-diagram}, is a static structure diagram that shows the relationship between our \textit{requirements} constructs, model elements that \textit{satisfies} dependency, and test cases that \textit{verify} dependency.
@@ -266,7 +266,7 @@ The purpose of requirement diagrams is to specify both functional and non-functi
     \centering
     \caption{Requirements Utilize Basic Relations, \cite{WormKangLec72024}}
     \label{fig:requirement-diagram-relations}
-    \includegraphics[width=0.9\linewidth]{report/GroupTemplate/images/Requirements basic relations.png}
+    \includegraphics[width=0.9\linewidth]{images/Requirements basic relations.png}
 \end{figure}
 As stated by Eun-Young Kang:
 \begin{quote}
@@ -291,7 +291,7 @@ The model is primarily used to organize and visualize the system's features in a
     \centering
     \caption{Feature Model Overview of Production Line}
     \label{fig:feature-model}
-    \includegraphics[width=1\linewidth]{report/GroupTemplate/images/feature_modelling.png}
+    \includegraphics[width=1\linewidth]{images/feature_modelling.png}
 \end{figure}
 
 Figure \ref{fig:feature-model} shows an overview of the production line with its system, subsystems and their features and sub-features. The production line is the system that branches into three main subsystems, Manufacturing Execution System (MES), Enterprise Resource Planning (ERP), and Human-Machine Interface (HMI). These three subsystems are \textbf{mandatory}, indicating that they are essential components for the operation of the production line in all configurations. The \textbf{mandatory} indicators are depicted by a line with a filled bubble, while \textbf{optional} indicators are lines with hollow bubble.
@@ -324,7 +324,7 @@ By splitting it up, the final system is built as a micro-service architecture, a
     \centering
     \caption{\centering A High-Level Diagram Depicting the Overall Architecture of the System}
     \label{fig:systems_and_subsystems-system_diagram}
-    \includegraphics[width=1\linewidth]{report/GroupTemplate/images/Systems&Subsystems.png}
+    \includegraphics[width=1\linewidth]{images/Systems&Subsystems.png}
 \end{figure}
 % Systemer og subsystemer kommer fra exercise 3.1
 % Beskriv systemerne
@@ -353,14 +353,14 @@ In this project, the architecture structure model focuses on the individual syst
     \centering
     \caption{A structural diagram showing the structure and communication flow in the \underline{monitoring} part of the MES subsystem}
     \label{fig:systems_and_subsystems-mes_monitoring_systemdiagram}
-    \includegraphics[width=1\linewidth]{report/GroupTemplate/images/MES_monitoring.png}
+    \includegraphics[width=1\linewidth]{images/MES_monitoring.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \caption{A structural diagram showing the structure and communication flow in the \underline{execution} part of the MES subsystem}
     \label{fig:systems_and_subsystems-mes_execution_systemdiagram}
-    \includegraphics[width=1\linewidth]{report/GroupTemplate/images/mes-execution.png}
+    \includegraphics[width=1\linewidth]{images/mes-execution.png}
 \end{figure}
 
 Figure \ref{fig:systems_and_subsystems-mes_execution_systemdiagram} and \ref{fig:systems_and_subsystems-mes_monitoring_systemdiagram} shows together the MES system, in regards to monitoring and production scheduling \& execution.
@@ -406,7 +406,7 @@ The production line requires high availability with an expected uptime of 24/7, 
 
 % \begin{figure}[H]
 %     \centering
-%     \includegraphics[width=1\linewidth]{report/GroupTemplate/images/formalized constraints.png}
+%     \includegraphics[width=1\linewidth]{images/formalized constraints.png}
 %     \caption{Enter Caption}
 %     \label{fig:formalized-contrains-diagram}
 % \end{figure}
@@ -420,7 +420,7 @@ This is a guide that help with planning the process of the production line from 
     \centering
     \caption{EAST-ADL Abstraction Levels}
     \label{fig:east-adl-levels}
-    \includegraphics[width=1\linewidth]{report/GroupTemplate/images/EAST-ADL abstraction levels.png}
+    \includegraphics[width=1\linewidth]{images/EAST-ADL abstraction levels.png}
 \end{figure}
 
 Using EAST-ADL, makes it possible to create abstraction at multiple levels, which allows for the design and definition of high-level production goals and refine them into detailed system implementations. By creating a functional decomposition with modular design, it is possible to reuse components across product lines, while integrated traceability ensures that design changes or errors can be easily tracked and resolved.
@@ -637,7 +637,7 @@ Explanation:
     \centering
     \caption{An explainer for path qualifiers and linear temporal operators in CTL}
     \label{fig:ctl-pq_and_lto_cheatsheet}
-    \includegraphics[width=1\linewidth]{report/GroupTemplate/images/ctl-notatio_explainer.png}
+    \includegraphics[width=1\linewidth]{images/ctl-notatio_explainer.png}
 \end{figure}
 
 A CTL statement is build up by Path Quantifier and Linear Temporal Operators. We always need to have at least one Path Quantifier and one Linear Temporal Operator. 
@@ -794,7 +794,7 @@ The project involved creating a system architecture for an ammunition production
 
 
 \bibliographystyle{IEEEtran}
-\bibliography{report/GroupTemplate/references}
+\bibliography{references}
 
 % \newpage
 %  .
@@ -809,57 +809,57 @@ The project involved creating a system architecture for an ammunition production
     \centering
     \caption{A structural diagram showing the structure and communication flow in the ERP subsystem}
     \label{fig:systems_and_subsystems-erp_systemdiagram}
-    \includegraphics[width=0.9\linewidth]{report/GroupTemplate/images/erp_subsystem.png}
+    \includegraphics[width=0.9\linewidth]{images/erp_subsystem.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \caption{A structural diagram showing the structure and communication flow in the HMI subsystem}
     \label{fig:systems_and_subsystems-hmi_systemdiagram}
-    \includegraphics[width=0.9\linewidth]{report/GroupTemplate/images/HMI_subsystem.png}
+    \includegraphics[width=0.9\linewidth]{images/HMI_subsystem.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \caption{The Legend for All Structural Diagrams}
     \label{fig:appendix-systems_and_subsystems_legend}
-    \includegraphics[width=0.9\linewidth]{report/GroupTemplate/images/systems_subsystems-legend.png}
+    \includegraphics[width=0.9\linewidth]{images/systems_subsystems-legend.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \caption{Use Case UC01}
     \label{fig:appendix-use-case-01}
-    \includegraphics[width=0.9\linewidth]{report/GroupTemplate/images/usecase-01.png}
+    \includegraphics[width=0.9\linewidth]{images/usecase-01.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \caption{Structural Diagram - Overview of Different Diagrams}
     \label{fig:structural-diagram}
-    \includegraphics[width=0.9\linewidth]{report/GroupTemplate/images/structual diagram.png}
+    \includegraphics[width=0.9\linewidth]{images/structual diagram.png}
 \end{figure}
 
 
-%\input{report/GroupTemplate/chapters/0 Abstract}
+%\input{chapters/0 Abstract}
 
-%\input{report/GroupTemplate/chapters/1 Introduction}
+%\input{chapters/1 Introduction}
 
-%\input{report/GroupTemplate/chapters/2 Diagrams}
+%\input{chapters/2 Diagrams}
 
-%\input{report/GroupTemplate/chapters/3 Requirements}
+%\input{chapters/3 Requirements}
 
-%\input{report/GroupTemplate/chapters/4 Quality Attributes}
+%\input{chapters/4 Quality Attributes}
 
-%\input{report/GroupTemplate/chapters/5 System Overview}
+%\input{chapters/5 System Overview}
 
 
 
-%\input{report/GroupTemplate/chapters/7 FORMAL VERIFICATION AND VALIDATION}
+%\input{chapters/7 FORMAL VERIFICATION AND VALIDATION}
 
-%\input{report/GroupTemplate/chapters/8 Discussion}
+%\input{chapters/8 Discussion}
 
-%\input{report/GroupTemplate/chapters/9 Conclusion}
+%\input{chapters/9 Conclusion}
 
 
 
